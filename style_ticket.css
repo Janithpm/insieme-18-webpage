@@ -1,0 +1,131 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: #252323;
+}
+.container{
+    position: absolute;
+    padding-top: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.container .content{
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 10px;
+  width: 400px;
+  background: #4e4d4d;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.container .content:hover{
+  box-shadow: 0px 5px 10px rgba(50,50,50,.8);
+}
+.container .content h1{
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  width:100%;
+  font-size: 4em;
+  padding-top: 0;
+  margin-top: 0;
+}
+.container  .content h2{
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  font-size: 2em;
+  font-family:monospace;
+
+}
+.container  .content h3{
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  font-size: 1.7em;
+  font-family:monospace;
+
+}
+.container .content .form{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container .content a{
+  left: 50px;
+  padding: 10px;
+  height: 20px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  background:#4e4d4d;
+  color:rgba(255,255,255,.8);
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.container .content a:hover{
+  background:rgba(255,255,255,.8);
+  color:#4e4d4d;
+  transform: scale(1.15);
+}
+.container .payment a{
+  border: none;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 25%;
+  text-align: center;
+  color:rgba(255,255,255,.65);
+  text-decoration: none;
+  width: 50%;
+  transition: 0.3s;
+}
+.container .payment a:hover{
+  transform: none;
+  color:rgba(255,255,255,1);
+  background:#4e4d4d;
+  text-shadow: 0px 0px 10px rgba(255,255,255,.8);
+}
+
+#infield{
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 3px;
+  height: 30px;
+  width: 75%;
+  color: rgba(255,255,255,.8);
+  background-color:#4e4d4d;
+
+}
+#button{
+  height: 40px;
+  width: 25%;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,1);
+  color: rgba(255,255,255,.8);
+  background-color:#4e4d4d;
+  transition: 0.3s;
+}
+#button:hover{
+  transform: scale(1.25);
+  background: rgba(255,255,255,.8);
+  color: #4e4d4d;
+}
+#checking{
+  display: inline;
+  color:  rgba(255,255,255,.8);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#agreement{
+  font-size: 1.2em;
+  color: rgba(255,255,255,.8);
+}

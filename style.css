@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:monospace;
+background: #252323;
+}
+
+img{
+  width: 200px;
+  height: 250px;
+}
+.container{
+  position: absolute;
+  padding-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+
+}
+.container .box{
+  position: relative;
+  width: 250px;
+  height: 500px;
+  background: #ccc;
+  transition: 0.3s;
+
+}
+.container .box:hover{
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0px 5px 20px rgba(0,0,0,.8);
+}
+
+.container .box .thumb{
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.container .box:nth-child(odd)  .thumb{
+  bottom: 0;
+  left: 0;
+}
+
+.container .box .thumb img{
+  width: 100%;
+}
+.container .box .details{
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #262626;
+}
+.container .box:nth-child(even)  .details{
+  bottom: 0;
+  left: 0;
+}
+.container .box:nth-child(1)  .details{
+  background: #f9211a;
+}
+.container .box:nth-child(2)  .details{
+  background: #4e4d4d;
+}
+
+.container .box:nth-child(3)  .details{
+  background: #118ac1;
+}
+.container .box .details .content{
+  position: absolute;
+  top: calc(50% + 8px);
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+.container .box:hover .details .content{
+  top: 50%;
+}
+.container .box .details .content .fa{
+  font-size: 80px;
+  color: #fff;
+}
+
+.container .box .details .content a{
+  left: 50%;
+  font-size: 15px;
+  font-family:sans-serif;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.container .box .details .content a:hover {
+  color: #000;
+  background: #fff;
+}
+
+@media (max-width:1070px){
+  .container{
+    left: 55%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+    .container .box{
+      height: 250px;
+        float: left;
+    }
+    .container .box .thumb{
+      display: none;
+
+    }
+}
+
+@media (max-width:840px){
+  .container{
+    top: 10%;
+    left: 0;
+    width: 100%;
+  display: initial;
+    transform: translate(0);
+  }
+  .container .box{
+    width: 100%;
+    height: 250px;
+    float: none;
+  }
+
+
+}

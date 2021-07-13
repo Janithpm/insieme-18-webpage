@@ -1,0 +1,48 @@
+<!doctype Html>
+<html>
+<head>
+  <title>INSIEME'18</title>
+  <link rel="stylesheet" type="text/css" href="style_ticket.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+        <div class="content">
+        <h1>  Book Your Ticket</h1>
+        <div class = "form">
+         <form method="POST" action="insert.php" >
+           <input type = "text" name="name" required id="infield" placeholder="Enter Your Name"size="40">
+           <br>
+           <br>
+           <input type = "number" name="phone" required id="infield" placeholder="Enter Your Contact Number" size="40" min="0" >
+           <br>
+           <br>
+           <input type = "text" name="address" required id="infield" placeholder="Enter Your Address"size="40">
+           <br>
+           <br>
+           <input type = "radio" name="alorol" required value="al"><span id="checking">2018 A/L</span>
+           <input type = "radio" name="alorol" required value="ol"><span id="checking">2015 O/L</span>
+           <br>
+           <br>
+           <input type = "checkbox" name="agree" required id="agree" value="yes"><span id="agreement">I agree for All policies</span>
+           <br>
+           <br><br>
+           <input type = "submit" value="I'm in" id="button">
+         </form>
+        </div>
+
+        <p><div class="payment">
+          <a href="howtopay.html"><h2>How To Pay/=</h2></a>
+        </div>
+          <br><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="home.html"><i class="fa fa-home"></i>&nbspINSIEME'18</a>&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a href="contact.html"><i class="fa fa-phone"></i>&nbspContact</a>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>

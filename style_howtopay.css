@@ -1,0 +1,182 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: #252323;
+}
+.container{
+    position: absolute;
+    padding-top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.container .content{
+  position: relative;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  width: 400px;
+  font-size: 1.1em;
+  background: #4e4d4d;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.container .content:hover{
+  box-shadow: 0px 5px 10px rgba(50,50,50,.8);
+}
+.container  .content h2{
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  font-size:1.8em;
+  font-family:monospace;
+
+}
+.container  .content h1{
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  font-size:2.3em;
+  font-family:monospace;
+
+}
+
+.container .content .bookingbutton{
+  padding-left:15%;
+}
+
+.container .content .bookingbutton a{
+  padding:10px;
+  height: 20px;
+  width: 70%;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  background:#4e4d4d;
+  color:rgba(255,255,255,.8);
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.container .content .bookingbutton a:hover{
+  background:rgba(255,255,255,.8);
+  color:#4e4d4d;
+  transform: scale(1.15);
+}
+.container .content .backlink a{
+  padding:10px;
+  height: 20px;
+  width: 38%;
+  text-align: center;
+  font-size: 0.8em;
+  text-decoration: none;
+  display:inline-block;
+  background:#4e4d4d;
+  color:rgba(255,255,255,.8);
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.container .content .backlink a:hover{
+  background:rgba(255,255,255,.8);
+  color:#4e4d4d;
+  transform: scale(1.15);
+}
+.container .content .tryagain{
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  text-align: center;
+}
+.container .content .tryagain a{
+  left: 27%;
+  padding:10px;
+  height: 20px;
+  width: 35%;
+  text-align: center;
+  font-size: 0.8em;
+  text-decoration: none;
+  display:inline-block;
+  background:#4e4d4d;
+  color:rgba(255,255,255,.8);
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.container .content .tryagain a:hover{
+  background:rgba(255,255,255,.8);
+  color:#4e4d4d;
+  transform: scale(1.15);
+}
+.container .content p{
+  font-size: 0.9em;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom:0;
+  color: rgba(255,255,255,.8);
+
+}
+.container .content .bank{
+  margin: 0;
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  color: rgba(255,255,255,.8);
+}
+.container .content .bank table{
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.container .content .bank tr{
+  padding:0;
+  margin: 0;
+}
+.container .content .bank td{
+  padding: 15px;
+  border: 2px solid rgba(255,255,255,.8);
+  border-radius: 5px;
+}
+
+.container .content .welcome{
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+#highlightnum{
+background-color: #28c7b7;
+}
+#highlightviber{
+background-color: #8f5db7;
+}
+#highlightwhatsapp{
+background-color: #128c7e;
+}
+#highlightfacebook{
+background-color: #3B5998 ;
+}
+#highlightname{
+background-color: #3B5998 ;
+}
+
+#highlightprice{
+background-color: #dd4b39 ;
+}
+#reg{
+  background: linear-gradient(90deg,#2839ee,#e22ccd);
+}
